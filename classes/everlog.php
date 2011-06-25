@@ -2,7 +2,7 @@
 
 class Everlog {
 
-    public $api_url = 'http://95.168.199.246:3001/';
+    public $api_url = 'http://api.everlog.org/';
 
     public function call($method, $args=NULL, $requestMethod='GET', $requestParams=NULL)
     {
