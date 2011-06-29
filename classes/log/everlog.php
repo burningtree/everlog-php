@@ -14,7 +14,7 @@ class Log_Everlog extends Log_Writer {
 		{
 			$this->everlog->call('dp/log', NULL, 'PUT', 
 					array( 
-							'value'=> $this->_log_levels[$message['level']].': '.$message['body'], 
+							'value'=> $this->_log_levels[$message['level']].': '.$message['body'].'('.$_SERVER['REQUEST_URI'].')', 
 							'created' => $message['time'],
 							)
 					);
